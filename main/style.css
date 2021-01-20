@@ -63,6 +63,7 @@
 .icon {
     /* margin: 1rem .5rem .8rem 1rem; */
     margin-top: .5rem;
+    margin-bottom: .5rem;
     height: 5rem;
     width: 5rem;
     padding: .8rem;
@@ -71,4 +72,16 @@
 
 .bordericon {
     border-right: 2px solid #dcdbdb !important;
+}
+
+.fontme {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.marginul {
+    margin: .3rem 0 .3rem 0;
+}
+
+.footerfont {
+    color: #6d6d6d;
 }

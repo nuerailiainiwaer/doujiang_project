@@ -1,5 +1,15 @@
 .navbar {
-    padding: 0 !important;
+    overflow: hidden;
+}
+
+.verttop {
+    box-shadow: 2px 2px 5px #ff6500;
+    opacity: .8;
+    background-color: #fff;
+}
+
+.secondsection {
+    margin-top: 12rem;
 }
 
 .navbar-nav {
@@ -62,11 +72,11 @@
 
 .icon {
     /* margin: 1rem .5rem .8rem 1rem; */
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    /* margin-top: .5rem;
+    margin-bottom: .5rem; */
     height: 5rem;
     width: 5rem;
-    padding: .8rem;
+    padding: .6rem;
     cursor: pointer;
 }
 
@@ -84,4 +94,8 @@
 
 .footerfont {
     color: #6d6d6d;
+}
+
+.underline {
+    text-decoration: none;
 }

@@ -1,0 +1,105 @@
+.navbar {
+    overflow: hidden;
+}
+
+.verttop {
+    box-shadow: 2px 2px 5px #ff6500;
+    opacity: .8;
+    background-color: #fff;
+}
+
+.secondsection {
+    margin-top: 10.5rem;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.collapse {
+    margin: 0 !important;
+}
+
+.navbar-nav>li {
+    display: inline-block;
+    float: none;
+}
+
+.nav-link {
+    height: 100% !important;
+    color: #fff !important;
+    transition: transform .2s;
+    display: inline-block;
+    margin: 0;
+    padding: .3rem 1rem 0 1rem !important;
+    /* border: solid 3px black; */
+    /* Animation */
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: '';
+    border-bottom: solid 3px white;
+    transform: scaleX(0);
+    padding-bottom: 2px;
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+}
+
+
+/* ///section two */
+
+.nav-link:hover {
+    transform: scale(1.1);
+    font-weight: 500;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#firstpic {
+    margin-top: 10.5rem;
+}
+
+.icon {
+    /* margin: 1rem .5rem .8rem 1rem; */
+    /* margin-top: .5rem;
+    margin-bottom: .5rem; */
+    height: 5rem;
+    width: 5rem;
+    padding: .6rem;
+    cursor: pointer;
+}
+
+.bordericon {
+    border-right: 2px solid #dcdbdb !important;
+}
+
+.fontme {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.marginul {
+    margin: .3rem 0 .3rem 0;
+}
+
+.footerfont {
+    color: #6d6d6d;
+}
+
+.underline {
+    text-decoration: none;
+}

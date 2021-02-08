@@ -6,10 +6,17 @@
     box-shadow: 2px 2px 5px #ff6500;
     opacity: .8;
     background-color: #fff;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 .secondsection {
-    margin-top: 12rem;
+    margin-top: 10.5rem;
 }
 
 .navbar-nav {
@@ -35,8 +42,6 @@
     display: inline-block;
     margin: 0;
     padding: .3rem 1rem 0 1rem !important;
-    /* border: solid 3px black; */
-    /* Animation */
 }
 
 .nav-item {
@@ -67,13 +72,9 @@
 .nav-link:hover {
     transform: scale(1.1);
     font-weight: 500;
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .icon {
-    /* margin: 1rem .5rem .8rem 1rem; */
-    /* margin-top: .5rem;
-    margin-bottom: .5rem; */
     height: 5rem;
     width: 5rem;
     padding: .6rem;
@@ -85,17 +86,89 @@
 }
 
 .fontme {
+    text-align: center;
     font-family: 'Noto Sans SC', sans-serif;
 }
 
+
+/* //footer */
+
 .marginul {
     margin: .3rem 0 .3rem 0;
+    cursor: pointer;
+}
+
+.marginul:hover {
+    color: #ff6500;
+}
+
+.marginul:active {
+    color: #ff6500;
+    font-weight: bold;
 }
 
 .footerfont {
     color: #6d6d6d;
 }
 
-.underline {
-    text-decoration: none;
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.d-flex11 {
+    display: flex;
+}
+
+.image_mobile {
+    display: none;
+}
+
+@media (max-width: 640px) and (min-width: 320px) {
+    .image_full {
+        display: none;
+    }
+    .d-flex11 {
+        display: none;
+    }
+    .secondsection {
+        margin-top: 72px;
+        height: 100% !important;
+    }
+    .image_mobile {
+        display: block;
+        width: 100%;
+    }
+    .text-center {
+        font-size: 1.5rem !important;
+    }
+    .fontme:nth-of-type(3) {
+        margin-top: 1rem;
+    }
+    .fontme:nth-of-type(4) {
+        margin-top: 1rem;
+    }
+    .footertopic {
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 640px) {
+    .navbar {
+        padding: .2rem .4rem !important;
+    }
+    .nav-link {
+        font-size: .8rem;
+    }
+    .icon {
+        height: 3rem;
+        width: 3rem;
+        padding: .1rem;
+    }
+    .icontext {
+        font-size: .6rem;
+    }
+    .secondsection {
+        margin-top: 7.5rem;
+    }
 }

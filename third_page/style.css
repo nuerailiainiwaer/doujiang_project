@@ -1,0 +1,210 @@
+.navbar {
+    overflow: hidden;
+}
+
+.verttop {
+    box-shadow: 2px 2px 5px #ff6500;
+    opacity: .8;
+    background-color: #fff;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.secondsection {
+    margin-top: 10.5rem;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.collapse {
+    margin: 0 !important;
+}
+
+.navbar-nav>li {
+    display: inline-block;
+    float: none;
+}
+
+.nav-link {
+    height: 100% !important;
+    color: #fff !important;
+    transition: transform .2s;
+    display: inline-block;
+    margin: 0;
+    padding: .3rem 1rem 0 1rem !important;
+    /* border: solid 3px black; */
+    /* Animation */
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: '';
+    border-bottom: solid 3px white;
+    transform: scaleX(0);
+    padding-bottom: 2px;
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+}
+
+
+/* ///section two */
+
+.nav-link:hover {
+    transform: scale(1.1);
+    font-weight: 500;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#firstpic {
+    margin-top: 10.5rem;
+}
+
+.icon {
+    /* margin: 1rem .5rem .8rem 1rem; */
+    /* margin-top: .5rem;
+    margin-bottom: .5rem; */
+    height: 5rem;
+    width: 5rem;
+    padding: .6rem;
+    cursor: pointer;
+}
+
+.fontme {
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: center;
+}
+
+.marginul {
+    margin: .3rem 0 .3rem 0;
+}
+
+.footerfont {
+    color: #6d6d6d;
+}
+
+.underline {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* ///image setting  */
+
+.d-flex11 {
+    display: flex;
+}
+
+.image_mobile {
+    display: none;
+}
+
+@media (max-width: 640px) and (min-width: 320px) {
+    #firstpic {
+        margin-top: 4rem !important;
+    }
+    .image_full {
+        display: none;
+    }
+    .d-flex11 {
+        display: none;
+    }
+    .secondsection {
+        margin-top: 72px;
+    }
+    .image_mobile {
+        display: block;
+        width: 100%;
+    }
+    /* removing nav class name  */
+    /* ///sections height */
+    .secondsection {
+        height: 100% !important;
+    }
+    .footerimg {
+        width: 8rem;
+        height: 6rem;
+    }
+    .text-center {
+        font-size: 1.5rem !important;
+    }
+    .fontme:nth-of-type(3) {
+        margin-top: 1rem;
+    }
+    .fontme:nth-of-type(4) {
+        margin-top: 1rem;
+    }
+    .footertopic {
+        font-weight: bold;
+    }
+    /* /// 机器的section */
+    .jiqi_title {
+        font-size: 1.5rem;
+    }
+    .jiqi_futitle {
+        font-size: 1rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
+    .next_line {
+        display: none;
+    }
+    .jiqi_pic {
+        height: 300px;
+        width: 200px;
+    }
+    .watshu {
+        font-size: 1rem;
+    }
+    .cangku {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 640px) {
+    .navbar {
+        padding: .2rem .4rem !important;
+    }
+    .nav-link {
+        font-size: .8rem;
+    }
+    .icon {
+        height: 3rem;
+        width: 3rem;
+        padding: .1rem;
+    }
+    .icontext {
+        font-size: .6rem;
+    }
+    .secondsection {
+        margin-top: 7.5rem;
+    }
+    #firstpic {
+        margin-top: 7rem !important;
+    }
+}
